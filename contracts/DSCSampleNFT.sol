@@ -1,31 +1,6 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.5;
+pragma solidity ^0.5.6;
 
-import "./libraries/NonFungibleToken.sol";
+import "./klaytn-contracts/token/KIP17/KIP17Token.sol";
 
-contract DSCSampleNFT is NonFungibleToken {
-
-    struct TokenInfo {
-        string name;
-    }
-    TokenInfo[] public tokens;
-
-    constructor() NonFungibleToken("DSCSampleNFT", "SAMPLE", "1") {}
-
-    function mint(string memory name) external returns (uint256 id) {
-        id = tokens.length;
-
-        tokens.push(
-            TokenInfo({
-                name: name
-            })
-        );
-
-        _mint(msg.sender, id);
-    }
-
-    function burn(uint256 id) external {
-        require(msg.sender == ownerOf(id));
-        _burn(id);
-    }
+contract DSCSampleNFT is KIP17Token("DSCSampleNFT", "SAMPLE") {
 }

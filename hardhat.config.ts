@@ -6,7 +6,7 @@ import { HardhatUserConfig } from "hardhat/types";
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.5",
+    version: "0.5.6",
   },
 };
 

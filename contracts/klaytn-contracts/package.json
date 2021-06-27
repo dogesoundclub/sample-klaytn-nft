@@ -1,0 +1,24 @@
+{
+  "name": "@klaytn/contracts",
+  "description": "Smart Contract library of Klaytn",
+  "version": "0.9.0",
+  "files": [
+    "**/*.sol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klaytn/klaytn-contracts.git"
+  },
+  "keywords": [
+    "solidity",
+    "klaytn",
+    "smart",
+    "contracts"
+  ],
+  "author": "Klaytn Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klaytn/klaytn-contracts/issues"
+  },
+  "homepage": "https://github.com/klaytn/klaytn-contracts"
+}
